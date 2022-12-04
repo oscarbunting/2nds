@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>2nds Calculator</title>
+    <style>
+      /* Define styles for the form and input elements */
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      input {
+        margin: 10px 0;
+        padding: 5px;
+        font-size: 16px;
+      }
+      /* Define styles for the results container and result elements */
+      .results {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .result {
+        margin: 10px 0;
+        padding: 5px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>2nds Calculator</h1>
+    <form>
+      <label for="names-input">Enter the names of the people in your group, separated by commas:</label>
+      <input type="text" id="names-input" placeholder="Alice, Bob, Carol, David, Eve">
+      <input type="button" id="calculate-button" value="Calculate">
+    </form>
+    <div class="results"></div>
+    <script>
+      // Define a dictionary to keep track of the number of times each person has had 2nds
+      const counts = {};
+
+      // Define a function to return the name of the person who should get 2nds next
+      function getNext2nds() {
+        // Find the person with the least number of 2nds
+        const least2nds = Object.keys(counts).reduce((a, b) => counts[a] < counts[b] ? a : b);
+        // Increment the count for that person
+        counts[least2nds] += 1;
+        // Return the person's name
+        return least2nds;
+      }
+
+      // Get a reference
