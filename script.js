@@ -10,6 +10,9 @@ button.addEventListener('click', calculate);
 // A variable to store the previous result
 let previousResult;
 
+// An array to store the names that have been called
+const called = [];
+
 // The calculate function gets the names from the input
 // field, calculates who gets the joint next, and
 // updates the page with the result
@@ -22,8 +25,9 @@ function calculate() {
   let result = random(names);
 
   // Check if the result is the same as the previous result
+  // or if it has already been called
   // If it is, call the random function again until a different result is returned
-  while (result === previousResult) {
+  while (result === previousResult || called.includes(result)) {
     result = random(names);
   }
 
@@ -36,6 +40,14 @@ function calculate() {
 
   // Store the result in a variable for the next time the function is called
   previousResult = result;
+  
+  // Add the result to the array of called names
+  called.push(result);
+  
+  // If all names have been called, reset the called array
+  if (called.length === names.length) {
+    called.length = 0;
+  }
 }
 
 // The addToHistory function adds the result to the history
