@@ -15,7 +15,7 @@ img {
 }
 
 input {
-  width: 65%;
+  width: 60%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -24,7 +24,7 @@ input {
 }
 
 button {
-  width: 25%;
+  width: 38%;
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
@@ -59,17 +59,11 @@ ul {
   padding: 0;
   margin: 0;
   display: grid;
+  color:#EEE;
   /* Define the number and widths of the columns in the history list */
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 4px;
-}
-
-.copyright {
-  text-align: center;
-  margin-top: 20px;
-  /* Change the text color of the copyright notice and "made by OJB" text */
-  color: #FFF;
 }

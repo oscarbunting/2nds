@@ -7,6 +7,9 @@ const resultElement = document.getElementById('result');
 // runs the calculate function when clicked
 button.addEventListener('click', calculate);
 
+// A variable to store the previous result
+let previousResult;
+
 // The calculate function gets the names from the input
 // field, calculates who gets the joint next, and
 // updates the page with the result
@@ -16,7 +19,13 @@ function calculate() {
 
   // Use a random algorithm to calculate who gets the joint next
   // Call the random function and store the result in a variable
-  const result = random(names);
+  let result = random(names);
+
+  // Check if the result is the same as the previous result
+  // If it is, call the random function again until a different result is returned
+  while (result === previousResult) {
+    result = random(names);
+  }
 
   // Update the page with the result
   resultElement.innerHTML = `Next up: ${result}`;
@@ -24,6 +33,9 @@ function calculate() {
 
   // Add the result to the history
   addToHistory(result);
+
+  // Store the result in a variable for the next time the function is called
+  previousResult = result;
 }
 
 // The addToHistory function adds the result to the history
