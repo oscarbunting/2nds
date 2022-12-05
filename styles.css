@@ -67,3 +67,16 @@ ul {
   padding: 20px;
   border-radius: 4px;
 }
+
+li {
+  /* Add a border around each list item */
+  border: 1px solid rgb(255, 255, 255);
+  /* Round the corners of the border */
+  border-radius: 4px;
+  /* Add some padding to the list items */
+  padding: 10px;
+}
+li::before {
+  content: "✓ ";
+  color: rgb(22, 221, 22);
+}
