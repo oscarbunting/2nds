@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <title>2nds - Who Gets It?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
-  <title>2nds - Who Gets It?</title>
+
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  
   <header>
-  <img src="/2nds_header.jpg" alt="Banner image">
-  <h1>Welcome to 2nds</h1>
-  <center>
-    <h4>You're Just Seconds Away ✌️ </h4>
-  <p>Enter the names of the people in your friendship group:</p>
-  </center>
+    
+    <img src="/2nds_header.jpg" alt="Banner image" class="responsive-image">
+    <h1>Welcome to 2nds</h1>
+    <center>
+      <h4>You're Just Seconds Away ✌️ </h4>
+      <p>Enter the names of the people in your session:</p>
+    </center>
   </header>
-  <input id="names" type="text" placeholder="e.g. Seth, Snoop, Larry">
-  <button id="calculate-button">Get 2nds</button>
-  <p id="result"></p>
+  <input id="names" type="text" placeholder="e.g. Seth, Snoop, Larry" class="responsive-input">
+  <button id="calculate-button" class="responsive-button">Get 2nds</button>
+  <p id="result" class="responsive-text"></p>
   <details>
     <summary>History</summary><br>
-  <ul id="history"></ul>
+    <ul id="history" class="responsive-list"></ul>
   </details>
   
   <script src="script.js"></script>
