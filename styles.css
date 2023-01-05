@@ -64,7 +64,7 @@ li {
 }
 li::before {
   content: "✓ ";
-  color: #03E5F9;
+  color: #03f955;
 }
 
 /* Add a responsive grid system */
@@ -145,7 +145,11 @@ li::before {
   text-align: center;
 }
 .leaderboard-div {
-  background-color: #011f4b;
+  border: solid;
+  border-radius: 5px;
+  padding: 10px 30px 10px 5px;
+  margin: 10px 0px 0px 0px;
+  background-color: #00000073;
   color: white
 
 }
