@@ -12,6 +12,7 @@ img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
+  border-radius: 5px 5px 5px 5px;
 }
 
 input {
@@ -155,7 +156,9 @@ li::before {
 
 }
 .login {
-  margin: 0px 0px 0px 0px;
+  display: inline-block;
+  float:right;
+  margin: 0px 0px 0px %;
   padding: 0px 0px 0px 0px;
   color: black
 }
