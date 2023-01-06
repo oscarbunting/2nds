@@ -156,9 +156,8 @@ li::before {
 
 }
 .login {
-  display: inline-block;
   float:right;
-  margin: 0px 0px 0px %;
+  margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
   color: black
 }
@@ -174,4 +173,14 @@ li::before {
   margin: 0px 5px 0px 0px;
 height: 20px;
 float:left
+}
+
+.container {
+  width: 100%;
+  clear: both;
+}
+
+.container input {
+  width: 100%;
+  clear: both;
 }
