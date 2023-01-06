@@ -149,7 +149,7 @@ li::before {
   border-radius: 5px;
   padding: 10px 30px 10px 5px;
   margin: 10px 0px 0px 0px;
-  background-color: #00000073;
+  background-color:rgba(0, 0, 0, 0.5);
   color: white
 
 }
@@ -158,4 +158,16 @@ li::before {
   padding: 0px 0px 0px 0px;
   color: black
 }
-
+.terms {
+  font-size: small;
+  margin: 0px 0px 10px 0px;
+  text-align: center;
+}
+.inline {
+  display:inline
+}
+.img-logo {
+  margin: 0px 5px 0px 0px;
+height: 20px;
+float:left
+}
