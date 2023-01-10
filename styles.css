@@ -168,12 +168,12 @@ li::before {
 }
 .inline {
   color: black;
-  display:inline;
+  display: inline;
 }
 .img-logo {
   margin: 0px 5px 0px 0px;
 height: 20px;
-float:left;
+float: left;
 }
 
 .container {
