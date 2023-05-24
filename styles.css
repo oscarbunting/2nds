@@ -168,12 +168,12 @@ li::before {
 }
 .inline {
   color: black;
-  display:inline;
+  display: inline;
 }
 .img-logo {
   margin: 0px 5px 0px 0px;
 height: 20px;
-float:left;
+float: left;
 }
 
 .container {
@@ -184,4 +184,15 @@ float:left;
 .container input {
   width: 100%;
   clear: both;
+}
+
+.faq-answer {
+  padding: 15px;
+  padding-top: 0;
+}
+
+.faq-question {
+  padding: 15px;
+  padding-bottom: 0;
+
 }
