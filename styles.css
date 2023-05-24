@@ -185,3 +185,14 @@ float: left;
   width: 100%;
   clear: both;
 }
+
+.faq-answer {
+  padding: 15px;
+  padding-top: 0;
+}
+
+.faq-question {
+  padding: 15px;
+  padding-bottom: 0;
+
+}
